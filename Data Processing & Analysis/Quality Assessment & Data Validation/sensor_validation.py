@@ -123,8 +123,8 @@ def main():
 
     try:
         # Load data
-        sensor_df = spark.read.csv("Datasets/sensor_data.csv", header=True, inferSchema=True)
-        equipment_df = spark.read.csv("Datasets/equipment_specs.csv", header=True, inferSchema=True)
+        sensor_df = spark.read.csv("/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/sensor_data.csv", header=True, inferSchema=True)
+        equipment_df = spark.read.csv("/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/equipment_specs.csv", header=True, inferSchema=True)
 
         # 1. Verify timestamp range and continuity
         timestamp_results = verify_timestamp_range_and_continuity(sensor_df)

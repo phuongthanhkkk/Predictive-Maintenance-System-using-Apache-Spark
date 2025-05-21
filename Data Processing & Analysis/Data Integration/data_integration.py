@@ -60,10 +60,10 @@ def main():
 
     try:
         # Load datasets
-        sensor_data = load_data(spark, "Datasets/sensor_data.csv")
-        maintenance_logs = load_data(spark, "Datasets/maintenance_logs.csv")
-        equipment_specs = load_data(spark, "Datasets/equipment_specs.csv")
-        operational_data = load_data(spark, "Datasets/operational_data_new.csv")
+        sensor_data = load_data(spark, "/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/sensor_data.csv")
+        maintenance_logs = load_data(spark, "/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/maintenance_logs.csv")
+        equipment_specs = load_data(spark, "/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/equipment_specs.csv")
+        operational_data = load_data(spark, "/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/operational_data.csv")
 
         # Integrate data
         integrated_data = integrate_data(spark, sensor_data, maintenance_logs, equipment_specs, operational_data)

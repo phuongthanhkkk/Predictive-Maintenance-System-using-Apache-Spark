@@ -82,7 +82,7 @@ def main():
 
     try:
         # Load datasets
-        equipment_df = spark.read.csv("Datasets/equipment_specs.csv", header=True, inferSchema=True)
+        equipment_df = spark.read.csv("/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/equipment_specs.csv", header=True, inferSchema=True)
 
         validate_equipment_specs(equipment_df)
 

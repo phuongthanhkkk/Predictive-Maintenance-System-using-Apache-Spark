@@ -133,7 +133,7 @@ def main():
 
     try:
         # Load operational data
-        operational_df = spark.read.csv("Datasets/operational_data.csv", header=True, inferSchema=True)
+        operational_df = spark.read.csv("/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/operational_data.csv", header=True, inferSchema=True)
 
         # Perform validation
         validation_results = validate_operational_data(operational_df)

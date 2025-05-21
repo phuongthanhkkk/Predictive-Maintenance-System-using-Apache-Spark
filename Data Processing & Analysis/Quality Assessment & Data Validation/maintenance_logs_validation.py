@@ -11,7 +11,7 @@ def create_spark_session():
 
 
 def load_maintenance_logs(spark):
-    return spark.read.csv("Datasets/maintenance_logs.csv", header=True, inferSchema=True)
+    return spark.read.csv("/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/maintenance_logs.csv", header=True, inferSchema=True)
 
 def flag_future_dates(df):
     return df.withColumn(
