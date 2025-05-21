@@ -174,7 +174,7 @@ def main():
 
     try:
         # Load data
-        csv_file_path = '/home/beboy/Documents/projects/scale/Datasets/integrated_data.csv/part-00000-86cf5062-a6eb-4e63-ad80-e45991def278-c000.csv'
+        csv_file_path = '/home/beboy/Documents/projects/scale/Datasets/integrated_data.csv/integrated_data.csv'
         integrated_df = load_csv_data(spark, csv_file_path)
 
         # Print số lượng bản ghi ban đầu

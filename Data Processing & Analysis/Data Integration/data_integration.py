@@ -63,7 +63,7 @@ def main():
         sensor_data = load_data(spark, "/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/sensor_data.csv")
         maintenance_logs = load_data(spark, "/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/maintenance_logs.csv")
         equipment_specs = load_data(spark, "/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/equipment_specs.csv")
-        operational_data = load_data(spark, "/home/beboy/Documents/projects/scale/Predictive-Maintenance-System-using-Apache-Spark/Data Processing & Analysis/Data Generator/operational_data.csv")
+        operational_data = load_data(spark, "/home/beboy/Documents/projects/scale/Datasets/corrected_operational_data.csv/corrected_operational_data.csv")
 
         # Integrate data
         integrated_data = integrate_data(spark, sensor_data, maintenance_logs, equipment_specs, operational_data)
